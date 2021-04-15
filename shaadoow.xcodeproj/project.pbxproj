@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E05CA9326207A5300E09C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E05CA9126207A5300E09C33 /* Main.storyboard */; };
+		2E05CA9526207A5500E09C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E05CA9426207A5500E09C33 /* Assets.xcassets */; };
+		2E05CA9826207A5500E09C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E05CA9626207A5500E09C33 /* LaunchScreen.storyboard */; };
+		2E05CAA326207A5600E09C33 /* shaadoowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E05CAA226207A5600E09C33 /* shaadoowTests.swift */; };
+		2E05CAAE26207A5600E09C33 /* shaadoowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E05CAAD26207A5600E09C33 /* shaadoowUITests.swift */; };
+		2E05CB0A26207C8200E09C33 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E05CB0926207C8200E09C33 /* ViewController.swift */; };
+		2E05CB1226207C8400E09C33 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E05CB1126207C8400E09C33 /* Model.swift */; };
+		2E05CB1726207C8600E09C33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E05CB1626207C8600E09C33 /* AppDelegate.swift */; };
+		2E05CB1C26207C8C00E09C33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E05CB1B26207C8C00E09C33 /* SceneDelegate.swift */; };
+		2E05CB2626207C9300E09C33 /* ArtistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E05CB2526207C9300E09C33 /* ArtistViewModel.swift */; };
+		2E05CB2B26207C9500E09C33 /* RecommendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E05CB2A26207C9500E09C33 /* RecommendViewModel.swift */; };
+		2E05CB3026207C9800E09C33 /* ArtistDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E05CB2F26207C9800E09C33 /* ArtistDataSource.swift */; };
+		2E05CB3526207C9A00E09C33 /* RecommendDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E05CB3426207C9A00E09C33 /* RecommendDataSource.swift */; };
+		2E05CB3A26207C9D00E09C33 /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E05CB3926207C9D00E09C33 /* RecommendCell.swift */; };
+		2E05CB4426207CA200E09C33 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E05CB4326207CA200E09C33 /* APIService.swift */; };
+		2E95035B262883B700BA01DA /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95035A262883B700BA01DA /* ArtistCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E05CA9F26207A5600E09C33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E05CA8026207A5300E09C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E05CA8726207A5300E09C33;
+			remoteInfo = shaadoow;
+		};
+		2E05CAAA26207A5600E09C33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E05CA8026207A5300E09C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E05CA8726207A5300E09C33;
+			remoteInfo = shaadoow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E05CA8826207A5300E09C33 /* shaadoow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shaadoow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E05CA9226207A5300E09C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E05CA9426207A5500E09C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E05CA9726207A5500E09C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E05CA9926207A5500E09C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E05CA9E26207A5600E09C33 /* shaadoowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shaadoowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E05CAA226207A5600E09C33 /* shaadoowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shaadoowTests.swift; sourceTree = "<group>"; };
+		2E05CAA426207A5600E09C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E05CAA926207A5600E09C33 /* shaadoowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shaadoowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E05CAAD26207A5600E09C33 /* shaadoowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shaadoowUITests.swift; sourceTree = "<group>"; };
+		2E05CAAF26207A5600E09C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E05CB0926207C8200E09C33 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E05CB1126207C8400E09C33 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2E05CB1626207C8600E09C33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E05CB1B26207C8C00E09C33 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2E05CB2526207C9300E09C33 /* ArtistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewModel.swift; sourceTree = "<group>"; };
+		2E05CB2A26207C9500E09C33 /* RecommendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewModel.swift; sourceTree = "<group>"; };
+		2E05CB2F26207C9800E09C33 /* ArtistDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDataSource.swift; sourceTree = "<group>"; };
+		2E05CB3426207C9A00E09C33 /* RecommendDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendDataSource.swift; sourceTree = "<group>"; };
+		2E05CB3926207C9D00E09C33 /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
+		2E05CB4326207CA200E09C33 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		2E95035A262883B700BA01DA /* ArtistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E05CA8526207A5300E09C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E05CA9B26207A5600E09C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E05CAA626207A5600E09C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E05CA7F26207A5300E09C33 = {
+			isa = PBXGroup;
+			children = (
+				2E05CA8A26207A5300E09C33 /* shaadoow */,
+				2E05CAA126207A5600E09C33 /* shaadoowTests */,
+				2E05CAAC26207A5600E09C33 /* shaadoowUITests */,
+				2E05CA8926207A5300E09C33 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E05CA8926207A5300E09C33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E05CA8826207A5300E09C33 /* shaadoow.app */,
+				2E05CA9E26207A5600E09C33 /* shaadoowTests.xctest */,
+				2E05CAA926207A5600E09C33 /* shaadoowUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E05CA8A26207A5300E09C33 /* shaadoow */ = {
+			isa = PBXGroup;
+			children = (
+				2E95035F26289A2600BA01DA /* Controllers */,
+				2E05CB6A2620A01F00E09C33 /* Data */,
+				2E05CB52262094F000E09C33 /* ViewModel */,
+				2E05CB51262094C900E09C33 /* Model */,
+				2E05CB4E2620940400E09C33 /* Cells */,
+				2E05CB54262095C500E09C33 /* Web */,
+				2E05CA9126207A5300E09C33 /* Main.storyboard */,
+				2E05CA9426207A5500E09C33 /* Assets.xcassets */,
+				2E05CA9626207A5500E09C33 /* LaunchScreen.storyboard */,
+				2E05CA9926207A5500E09C33 /* Info.plist */,
+			);
+			path = shaadoow;
+			sourceTree = "<group>";
+		};
+		2E05CAA126207A5600E09C33 /* shaadoowTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E05CAA226207A5600E09C33 /* shaadoowTests.swift */,
+				2E05CAA426207A5600E09C33 /* Info.plist */,
+			);
+			path = shaadoowTests;
+			sourceTree = "<group>";
+		};
+		2E05CAAC26207A5600E09C33 /* shaadoowUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E05CAAD26207A5600E09C33 /* shaadoowUITests.swift */,
+				2E05CAAF26207A5600E09C33 /* Info.plist */,
+			);
+			path = shaadoowUITests;
+			sourceTree = "<group>";
+		};
+		2E05CB4E2620940400E09C33 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2E05CB3926207C9D00E09C33 /* RecommendCell.swift */,
+				2E95035A262883B700BA01DA /* ArtistCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2E05CB51262094C900E09C33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E05CB1126207C8400E09C33 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E05CB52262094F000E09C33 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2E05CB2A26207C9500E09C33 /* RecommendViewModel.swift */,
+				2E05CB2526207C9300E09C33 /* ArtistViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2E05CB54262095C500E09C33 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				2E05CB4326207CA200E09C33 /* APIService.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		2E05CB6A2620A01F00E09C33 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2E05CB3426207C9A00E09C33 /* RecommendDataSource.swift */,
+				2E05CB2F26207C9800E09C33 /* ArtistDataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		2E95035F26289A2600BA01DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E05CB1B26207C8C00E09C33 /* SceneDelegate.swift */,
+				2E05CB1626207C8600E09C33 /* AppDelegate.swift */,
+				2E05CB0926207C8200E09C33 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E05CA8726207A5300E09C33 /* shaadoow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E05CAB226207A5600E09C33 /* Build configuration list for PBXNativeTarget "shaadoow" */;
+			buildPhases = (
+				2E05CA8426207A5300E09C33 /* Sources */,
+				2E05CA8526207A5300E09C33 /* Frameworks */,
+				2E05CA8626207A5300E09C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = shaadoow;
+			productName = shaadoow;
+			productReference = 2E05CA8826207A5300E09C33 /* shaadoow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E05CA9D26207A5600E09C33 /* shaadoowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E05CAB526207A5600E09C33 /* Build configuration list for PBXNativeTarget "shaadoowTests" */;
+			buildPhases = (
+				2E05CA9A26207A5600E09C33 /* Sources */,
+				2E05CA9B26207A5600E09C33 /* Frameworks */,
+				2E05CA9C26207A5600E09C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E05CAA026207A5600E09C33 /* PBXTargetDependency */,
+			);
+			name = shaadoowTests;
+			productName = shaadoowTests;
+			productReference = 2E05CA9E26207A5600E09C33 /* shaadoowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E05CAA826207A5600E09C33 /* shaadoowUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E05CAB826207A5600E09C33 /* Build configuration list for PBXNativeTarget "shaadoowUITests" */;
+			buildPhases = (
+				2E05CAA526207A5600E09C33 /* Sources */,
+				2E05CAA626207A5600E09C33 /* Frameworks */,
+				2E05CAA726207A5600E09C33 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E05CAAB26207A5600E09C33 /* PBXTargetDependency */,
+			);
+			name = shaadoowUITests;
+			productName = shaadoowUITests;
+			productReference = 2E05CAA926207A5600E09C33 /* shaadoowUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E05CA8026207A5300E09C33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					2E05CA8726207A5300E09C33 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					2E05CA9D26207A5600E09C33 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 2E05CA8726207A5300E09C33;
+					};
+					2E05CAA826207A5600E09C33 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 2E05CA8726207A5300E09C33;
+					};
+				};
+			};
+			buildConfigurationList = 2E05CA8326207A5300E09C33 /* Build configuration list for PBXProject "shaadoow" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E05CA7F26207A5300E09C33;
+			productRefGroup = 2E05CA8926207A5300E09C33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E05CA8726207A5300E09C33 /* shaadoow */,
+				2E05CA9D26207A5600E09C33 /* shaadoowTests */,
+				2E05CAA826207A5600E09C33 /* shaadoowUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E05CA8626207A5300E09C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E05CA9826207A5500E09C33 /* LaunchScreen.storyboard in Resources */,
+				2E05CA9526207A5500E09C33 /* Assets.xcassets in Resources */,
+				2E05CA9326207A5300E09C33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E05CA9C26207A5600E09C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E05CAA726207A5600E09C33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E05CA8426207A5300E09C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E95035B262883B700BA01DA /* ArtistCell.swift in Sources */,
+				2E05CB3526207C9A00E09C33 /* RecommendDataSource.swift in Sources */,
+				2E05CB3026207C9800E09C33 /* ArtistDataSource.swift in Sources */,
+				2E05CB1C26207C8C00E09C33 /* SceneDelegate.swift in Sources */,
+				2E05CB1726207C8600E09C33 /* AppDelegate.swift in Sources */,
+				2E05CB2B26207C9500E09C33 /* RecommendViewModel.swift in Sources */,
+				2E05CB0A26207C8200E09C33 /* ViewController.swift in Sources */,
+				2E05CB3A26207C9D00E09C33 /* RecommendCell.swift in Sources */,
+				2E05CB1226207C8400E09C33 /* Model.swift in Sources */,
+				2E05CB2626207C9300E09C33 /* ArtistViewModel.swift in Sources */,
+				2E05CB4426207CA200E09C33 /* APIService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E05CA9A26207A5600E09C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E05CAA326207A5600E09C33 /* shaadoowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E05CAA526207A5600E09C33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E05CAAE26207A5600E09C33 /* shaadoowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E05CAA026207A5600E09C33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E05CA8726207A5300E09C33 /* shaadoow */;
+			targetProxy = 2E05CA9F26207A5600E09C33 /* PBXContainerItemProxy */;
+		};
+		2E05CAAB26207A5600E09C33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E05CA8726207A5300E09C33 /* shaadoow */;
+			targetProxy = 2E05CAAA26207A5600E09C33 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E05CA9126207A5300E09C33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E05CA9226207A5300E09C33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E05CA9626207A5500E09C33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E05CA9726207A5500E09C33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E05CAB026207A5600E09C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E05CAB126207A5600E09C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E05CAB326207A5600E09C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9SRW59SM7;
+				INFOPLIST_FILE = shaadoow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.floso.shaadoow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E05CAB426207A5600E09C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9SRW59SM7;
+				INFOPLIST_FILE = shaadoow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.floso.shaadoow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2E05CAB626207A5600E09C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9SRW59SM7;
+				INFOPLIST_FILE = shaadoowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.floso.shaadoowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shaadoow.app/shaadoow";
+			};
+			name = Debug;
+		};
+		2E05CAB726207A5600E09C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9SRW59SM7;
+				INFOPLIST_FILE = shaadoowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.floso.shaadoowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shaadoow.app/shaadoow";
+			};
+			name = Release;
+		};
+		2E05CAB926207A5600E09C33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9SRW59SM7;
+				INFOPLIST_FILE = shaadoowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.floso.shaadoowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = shaadoow;
+			};
+			name = Debug;
+		};
+		2E05CABA26207A5600E09C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V9SRW59SM7;
+				INFOPLIST_FILE = shaadoowUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.floso.shaadoowUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = shaadoow;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E05CA8326207A5300E09C33 /* Build configuration list for PBXProject "shaadoow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E05CAB026207A5600E09C33 /* Debug */,
+				2E05CAB126207A5600E09C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E05CAB226207A5600E09C33 /* Build configuration list for PBXNativeTarget "shaadoow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E05CAB326207A5600E09C33 /* Debug */,
+				2E05CAB426207A5600E09C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E05CAB526207A5600E09C33 /* Build configuration list for PBXNativeTarget "shaadoowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E05CAB626207A5600E09C33 /* Debug */,
+				2E05CAB726207A5600E09C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E05CAB826207A5600E09C33 /* Build configuration list for PBXNativeTarget "shaadoowUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E05CAB926207A5600E09C33 /* Debug */,
+				2E05CABA26207A5600E09C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E05CA8026207A5300E09C33 /* Project object */;
+}
