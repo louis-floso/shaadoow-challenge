@@ -13,7 +13,6 @@ class APIService :  NSObject {
         
         URLSession.shared.dataTask(with: artistURL) { [weak self]  (data, urlResponse, error) in
             if let data = data {
-                print("data")
                 let jsonDecoder = JSONDecoder()
                 
                 let empData2 = try! jsonDecoder.decode(ArtistModel.self, from: data)

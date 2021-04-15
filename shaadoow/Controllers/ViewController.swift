@@ -99,7 +99,6 @@ class ViewController: UIViewController{
             
         }
         
-        print("compelte")
     }
     
     
